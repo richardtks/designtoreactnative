@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { View, StyleSheet, TouchableOpacity, Slider } from "react-native";
-import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import { StyleSheet, TouchableOpacity } from "react-native";
 
 import Box from "../components/box";
 import Text from "../components/text";
 import HorizontalSlider from "../components/horizontalslider";
+import Slider from "../components/slider";
 
 import Icons, { BackIcon } from "../constants/icons";
 import theme from "../constants/theme";
@@ -32,30 +32,8 @@ export default class Setting extends Component {
             <HorizontalSlider />
           </Box>
         </Box>
-        <Box size={{ height: 70 }} spacebetween style={{ marginBottom: 40 }}>
-          <Box row spacebetween style={{paddingHorizontal: 10}}>
-            <Text label size={20}>Direction</Text>
-            <Text>34°C</Text>
-          </Box>
-          <Slider
-            style={{borderWidth: 2, borderColor: "red"}}
-            thumbTintColor={theme.colors.accent}
-            minimumTrackTintColor={theme.colors.accent}
-            maximumTrackTintColor={theme.colors.gray2}
-          />
-        </Box>
-        <Box size={{ height: 70 }} spacebetween style={{ marginBottom: 40 }}>
-          <Box row spacebetween style={{paddingHorizontal: 10}}>
-            <Text label size={20}>Speed</Text>
-            <Text>34</Text>
-          </Box>
-          <Slider
-            style={{borderWidth: 2, borderColor: "red"}}
-            thumbTintColor={theme.colors.accent}
-            minimumTrackTintColor={theme.colors.accent}
-            maximumTrackTintColor={theme.colors.gray2}
-          />
-        </Box>
+        <Slider label="temperature" textSize={20}/>
+        <Slider label="speed" textSize={20}/>
       </Box>
     );
   }
@@ -66,5 +44,5 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#F9F9FC",
     padding: theme.sizes.base * 1.5
-  }
+  },
 });
