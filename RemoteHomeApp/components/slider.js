@@ -29,6 +29,7 @@ export default class CustomSlider extends Component {
           <Text>{value}</Text>
         </Box>
         <Slider
+          style={{marginTop: 25, marginBottom: 50}}
           thumbTintColor={theme.colors.accent}
           minimumTrackTintColor={theme.colors.accent}
           maximumTrackTintColor={theme.colors.gray2}
@@ -42,6 +43,5 @@ export default class CustomSlider extends Component {
 const styles = StyleSheet.create({
   labelSection: {
     paddingHorizontal: 10,
-    marginVertical: 25,
   },
 });

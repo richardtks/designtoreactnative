@@ -32,7 +32,7 @@ export default class Setting extends Component {
             <HorizontalSlider />
           </Box>
         </Box>
-        <Slider label="temperature" textSize={20}/>
+        <Slider label="temperature" textSize={20} />
         <Slider label="speed" textSize={20}/>
       </Box>
     );
