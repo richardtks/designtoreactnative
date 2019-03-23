@@ -14,6 +14,7 @@ const Box = ({
   contentCenter,
   contentRight,
   alignCenter,
+  alignBottom,
   circle
 }) => {
   const containerStyle = StyleSheet.flatten([
@@ -28,6 +29,7 @@ const Box = ({
     contentCenter && styles.contentCenter,
     contentRight && styles.contentRight,
     alignCenter && styles.alignCenter,
+    alignBottom && styles.alignBottom,
     style
   ]);
 
@@ -55,6 +57,9 @@ const styles = StyleSheet.create({
   },
   alignCenter: {
     alignItems: "center"
+  },
+  alignBottom: {
+    alignItems: "flex-end"
   }
 });
 

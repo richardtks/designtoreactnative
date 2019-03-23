@@ -22,11 +22,11 @@ export default class Setting extends Component {
         <Box row size={{ height: 250 }}>
           <Box flex={1}>
             {Icons["ac"].component({ size: 60, color: theme.colors.gray })}
-            <Box style={{ alignItems: "flex-end" }} row contentRight>
+            <Box row alignBottom contentRight>
               <Text large>34</Text>
               <Text unit>°C</Text>
+              <Text small style={{position: "absolute",left: 0}}>Temperature</Text>
             </Box>
-            <Text small>Temperature</Text>
           </Box>
           <Box flex={1} alignCenter>
             <HorizontalSlider />

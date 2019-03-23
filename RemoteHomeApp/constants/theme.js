@@ -42,8 +42,9 @@ const fonts = {
   largeText: {
     fontSize: sizes.largeText,
     color: colors.black,
-    letterSpacing: -10,
-    lineHeight: sizes.largeText
+    letterSpacing: -8,
+    lineHeight: sizes.largeText,
+    paddingTop: -sizes.largeText / 2,
   },
   unitText: {
     fontSize: sizes.unitText,

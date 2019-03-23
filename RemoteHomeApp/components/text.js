@@ -17,6 +17,5 @@ const CustomText = ({ large, small, label, children, style, height, weight, size
 
   return <Text style={textStyle}>{children}</Text>;
 };
-const styles = StyleSheet.create({});
 
 export default CustomText;
