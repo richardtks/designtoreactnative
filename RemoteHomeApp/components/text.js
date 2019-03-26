@@ -3,7 +3,7 @@ import { Text, StyleSheet, View } from "react-native";
 
 import theme from "../constants/theme";
 
-const CustomText = ({ large, small, label, children, style, height, weight, size, unit }) => {
+const CustomText = ({ large, small, label, children, style, height, weight, size, unit, sliderLabel }) => {
   const textStyle = StyleSheet.flatten([
     large && theme.fonts.largeText,
     small && theme.fonts.smallText,
@@ -12,6 +12,7 @@ const CustomText = ({ large, small, label, children, style, height, weight, size
     size && { fontSize: size },
     height && { lineHeight: height },
     weight && { fontWeight: weight },
+    sliderLabel && theme.fonts.sliderLabel,
     style && style
   ]);
 

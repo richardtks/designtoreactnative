@@ -18,15 +18,15 @@ export default class CustomSlider extends Component {
   }
 
   render() {
-    const { label, textSize, ...props } = this.props;
+    const { label, textSize, unit = "", ...props } = this.props;
     const { value } = this.state;
     return (
       <Box {...props} spacebetween>
         <Box row spacebetween style={styles.labelSection}>
-          <Text label size={textSize}>
+          <Text sliderLabel size={textSize}>
             {label}
           </Text>
-          <Text>{value}</Text>
+          <Text sliderLabel>{`${value}${unit}`}</Text>
         </Box>
         <Slider
           style={{marginTop: 25, marginBottom: 50}}

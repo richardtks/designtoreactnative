@@ -58,6 +58,12 @@ const fonts = {
     fontWeight: "600",
     letterSpacing: -0.4,
     lineHeight: sizes.button + 4
+  },
+  sliderLabel: {
+    fontSize: sizes.button + 3,
+    color: colors.black,
+    letterSpacing: -0.4,
+    lineHeight: sizes.button + 4
   }
 };
 

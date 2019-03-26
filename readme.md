@@ -10,4 +10,4 @@
 
 ![RemoteHomeApp](https://gdurl.com/EdYz)
 
-[Original](https://dribbble.com/shots/4585243-Smart-Home-App-Ui)
+[Source](https://dribbble.com/shots/4585243-Smart-Home-App-Ui)
