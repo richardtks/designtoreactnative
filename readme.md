@@ -8,9 +8,9 @@
 ** Missing original source
 
 ### React native (Android)
-![TrainApp_Home](https://user-images.githubusercontent.com/43637878/54979016-f991eb80-4fdc-11e9-90db-4271fb5dc1e4.png?v=4&s=200)
-![TrainApp_Setting](https://user-images.githubusercontent.com/43637878/54979017-f991eb80-4fdc-11e9-8702-8b2cbffb2238.png)
-![TrainApp_TrainList](https://user-images.githubusercontent.com/43637878/54979018-fa2a8200-4fdc-11e9-9765-6d9ff9daf31e.png)
+![TrainApp_Home](https://user-images.githubusercontent.com/43637878/54979457-285c9180-4fde-11e9-94a9-31c8e5f54c4b.jpg)
+![TrainApp_Setting](https://user-images.githubusercontent.com/43637878/54979458-28f52800-4fde-11e9-85e9-b73be8dcf67c.jpg)
+![TrainApp_TrainList](https://user-images.githubusercontent.com/43637878/54979460-28f52800-4fde-11e9-8dea-37d3ee47a483.jpg)
 
 
 ## RemoteHomeApp
@@ -22,6 +22,5 @@
 
 ### React native(Android)
 
-![RemoteHomeApp_Home](https://user-images.githubusercontent.com/43637878/54978993-e3842b00-4fdc-11e9-8285-ee053f26ce4b.png)
-
-![RemoteHomeApp_Setting](https://user-images.githubusercontent.com/43637878/54979007-ee3ec000-4fdc-11e9-835c-4a6be3faea20.png)
+![RemoteHomeApp_Home](https://user-images.githubusercontent.com/43637878/54979454-27c3fb00-4fde-11e9-926d-1158069382a0.jpg)
+![RemoteHomeApp_Setting](https://user-images.githubusercontent.com/43637878/54979455-27c3fb00-4fde-11e9-9ab0-37596706ca72.jpg)
