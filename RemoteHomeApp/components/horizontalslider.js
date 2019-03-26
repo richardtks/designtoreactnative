@@ -7,7 +7,7 @@ import theme from "../constants/theme";
 
 const CONTROLLER_HEIGHT = 200;
 
-export default class Slider extends Component {
+export default class HorizontalSlider extends Component {
   state = {
     panValue: 0,
     rangeValue: 16,
