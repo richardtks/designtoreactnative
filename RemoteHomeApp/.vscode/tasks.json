@@ -3,10 +3,11 @@
   // for the documentation about the tasks.json format
   "version": "2.0.0",
   "tasks": [
-    {
-      "type": "npm",
-      "script": "android",
-      "problemMatcher": []
-    }
+   {
+     "label": "Run the android emulator",
+     "type": "shell",
+     "command": "emulator @Pixel_2_API_25 -no-snapshot-save",
+     "problemMatcher": []
+   }
   ]
 }

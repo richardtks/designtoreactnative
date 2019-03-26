@@ -10,26 +10,25 @@ const CONTROLLER_HEIGHT = 200;
 export default class Slider extends Component {
   state = {
     panValue: 0,
-    rangeValue: 0,
-    percentage: 0,
+    rangeValue: 16,
+    height: 16,
   };
 
   handleMove = moveValue => {
     const { panValue } = this.state;
-    const { minValue, maxValue } = this.props;
+    const minValue = 16, maxValue = 30;
     const max = maxValue > CONTROLLER_HEIGHT ? maxValue : CONTROLLER_HEIGHT;
-    const range = (maxValue || max) - minValue;
+    const range = maxValue - minValue;
 
     let value = panValue - (moveValue / range);
     if (value > max) value = max;
     if (value < minValue) value = minValue;
 
-    const percentage = (value / max) * 100;
-    const rangeValue = (range * percentage) / 100;
+    const height = (value / max) * CONTROLLER_HEIGHT;
+    let rangeValue = (value / max) * maxValue;
+    if (rangeValue < minValue) rangeValue = minValue;
 
-    console.log('hello')
-
-    this.setState({ panValue: value, rangeValue, percentage });
+    this.setState({ panValue: value, rangeValue, height });
   }
 
   panResponder = PanResponder.create({
@@ -37,17 +36,11 @@ export default class Slider extends Component {
     onStartShouldSetPanResponderCapture: () => true,
     onMoveShouldSetPanResponder: () => true,
     onMoveShouldSetPanResponderCapture: () => true,
-    onPanResponderMove: (evt, { dy }) => this.handleMove(dy)
+    onPanResponderMove: (evt, { dy } ) => this.handleMove(dy)
   })
 
   render() {
-    const { minValue } = this.props;
-    const { rangeValue, percentage } = this.state;
-
-    const height = `${percentage || minValue}%`;
-
-    console.log('height', height)
-
+    const { height, rangeValue } = this.state;
     return (
       <Box
         color={theme.colors.gray2}
@@ -67,15 +60,10 @@ export default class Slider extends Component {
             alignSelf: "center"
           }}
         >
-          <Text>25°C</Text>
+          <Text>{`${rangeValue.toFixed(0)}°C`}</Text>
         </Box>
-        <Box color={theme.colors.accent} size={{ height: "100%" }} />
+        <Box color={theme.colors.accent} size={{ height }} />
       </Box>
     );
   }
-}
-
-Slider.defaultProps = {
-  minValue: 10,
-  maxValue: 45,
 }

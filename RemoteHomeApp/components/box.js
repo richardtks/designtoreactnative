@@ -15,7 +15,8 @@ const Box = ({
   contentRight,
   alignCenter,
   alignBottom,
-  circle
+  circle,
+  ...props
 }) => {
   const containerStyle = StyleSheet.flatten([
     { width, height },
@@ -33,7 +34,7 @@ const Box = ({
     style
   ]);
 
-  return <View style={containerStyle}>{children}</View>;
+  return <View style={containerStyle} {...props}>{children}</View>;
 };
 
 const styles = StyleSheet.create({
